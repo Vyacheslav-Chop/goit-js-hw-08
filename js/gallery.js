@@ -93,7 +93,7 @@ function handleClick(event) {
     console.log(`Перехід заборонено:`, event.target.closest('.gallery-link'));
   }
 
-  if (event.target === event.currentTarget) {
+  if (event.target.nodeName !== "IMG") {
     return;
   }
 
